@@ -1,2 +1,2 @@
 # MicrobList
-This is an open-source website in response to Microsoft taking over Wunderlist
+This is an open-source project in response to Microsoft taking over Wunderlist
