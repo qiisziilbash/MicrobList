@@ -17,3 +17,7 @@
         - root > Home > Cooking > Task 2
         - root > Home > Cleaning > Task 1
         - root > Sports > Climbing > Task 1
+- GUI
+    - [ ] Shows tasks and folders in a layered format
+    - [ ] Responsive: Phone, Tablet, Screen
+ 
