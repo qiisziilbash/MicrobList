@@ -6,15 +6,15 @@ def home(request):
 
 
 def sign_up(request):
-    pass
+    return render(request, 'accounts/sign_up.html')
 
 
 def sign_in(request):
-    pass
+    return render(request, 'accounts/sign_in.html')
 
 
 def sign_out(request):
-    pass
+    return render(request, 'accounts/sign_out.html')
 
 
 def reset(request):
