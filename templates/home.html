@@ -1,12 +1,30 @@
 {% extends 'base.html' %}
 
 {%  block body %}
-    {% if user.authonticated %}
-        You are signed in as {{ user.username }}
-        <a href="{% url 'sign_out' %}">Sign out</a>
-    {% else %}
-        <a href="{% url 'sign_in' %}">Sign in</a>
-        <br>
-        <a href="{% url 'sign_up' %}">Sign up</a>
-    {% endif %}
+    <h2>
+        (
+            {% if user.authonticated %}
+                You are signed in as {{ user.username }}
+                <a href="{% url 'sign_out' %}">Sign out</a>
+            {% else %}
+                <a href="{% url 'sign_in' %}">Sign in</a>
+                 |
+                <a href="{% url 'sign_up' %}">Sign up</a>
+            {% endif %}
+        )
+    </h2>
+
+    <h3>
+        Sample Lists<br>
+        |-- Home Stuff<br>
+        |   |-- Cooking<br>
+        |   |   |-- Task 1<br>
+        |   |   |-- Task 2<br>
+        |-- Sports<br>
+        |   |-- Climbing<br>
+        |   |   |-- Task 1<br>
+        |   |-- Running<br>
+        |   |   |-- Task 1<br>
+
+    </h3>
 {%  endblock %}
