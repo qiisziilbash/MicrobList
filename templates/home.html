@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Microblist</title>
-</head>
-<body>
-<h1 style="text-align: center"> Welcome to Microblist</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{%  block body %}
+    {% if user.authonticated %}
+        You are signed in as {{ user.username }}
+        <a href="{% url 'sign_out' %}">Sign out</a>
+    {% else %}
+        <a href="{% url 'sign_in' %}">Sign in</a>
+        <br>
+        <a href="{% url 'sign_up' %}">Sign up</a>
+    {% endif %}
+{%  endblock %}
